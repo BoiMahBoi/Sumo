@@ -6,32 +6,8 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance = null;
-
-    public bool gameIsOver = false;
-    public TextMeshProUGUI gameOverText;
     public GameObject gameOverScreen;
-
-    private void Awake()
-    {
-        if(instance == null)
-        {
-            instance = this;
-        } else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);
-
-        Time.timeScale = 1;
-
-    }
-
-    private void Start()
-    {
-        gameIsOver = false;
-    }
+    public TextMeshProUGUI gameOverText;
 
     private void Update()
     {
@@ -51,15 +27,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-
     public void GameOver(int playerNumber)
     {
-        if(!gameIsOver)
-        {
-            gameIsOver = true;
-            Time.timeScale = 0;
-            gameOverScreen.SetActive(true);
-            gameOverText.SetText("Player " + playerNumber + " fell off the arena!");
-        }
+        Debug.Log("Penis");
+        Time.timeScale = 0;
+        gameOverScreen.SetActive(true);
+        gameOverText.SetText("Player " + playerNumber + " fell off the arena!");
     }
 }

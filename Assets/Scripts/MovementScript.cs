@@ -11,7 +11,7 @@ public class MovementScript : MonoBehaviour
     // Vi bruger fixed update, så hastigheden af spilleren ikke afhænger af hvor mange FPS spillet kører med.
     void FixedUpdate()
     {
-        //Vi bruger Unitys Input Manager axis "Hprizontal" og "Vertical" plus spillerens nr, da vi har oprettet disse axis på forhånd.
+        //Vi bruger Unitys Input Manager axis "Horizontal" og "Vertical" plus spillerens nr, da vi har oprettet disse axis på forhånd.
         float inputX = Input.GetAxisRaw("Horizontal" + playerNumber);
         float inputY = Input.GetAxisRaw("Vertical" + playerNumber);
         movement = new Vector2(inputX, inputY);

@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class ArenaScript : MonoBehaviour
 {
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
