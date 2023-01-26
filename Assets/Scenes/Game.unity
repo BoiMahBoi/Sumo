@@ -587,7 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cookieCalories: 0.5
   startWeight: 1
-  minWeight: 0.2
+  minWeight: 0.6
   maxWeight: 2.5
   currentWeight: 0
   slurpSound: {fileID: 8300000, guid: 10c83646585c3f64d9d41b287966184a, type: 3}
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cookieCalories: 0.5
   startWeight: 1
-  minWeight: 0.2
+  minWeight: 0.6
   maxWeight: 2.5
   currentWeight: 0
   slurpSound: {fileID: 8300000, guid: 10c83646585c3f64d9d41b287966184a, type: 3}
@@ -1443,13 +1443,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1026457020}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1026457021}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1822,7 +1822,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1804658233}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1026457021}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: RetryGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1804658233
 MonoBehaviour:
   m_ObjectHideFlags: 0

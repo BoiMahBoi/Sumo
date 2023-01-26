@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        gameIsOver = false;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
