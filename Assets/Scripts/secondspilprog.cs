@@ -17,7 +17,7 @@ public class secondspilprog : MonoBehaviour
     }
 
 
-    // Fixed update i called before update, at the same rate based on Delta Time 
+    // Fixed update is called before update, at the same rate based on Delta Time 
     // physics 
     private void FixedUpdate()
     {
