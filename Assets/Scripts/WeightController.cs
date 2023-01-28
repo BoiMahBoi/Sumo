@@ -23,6 +23,7 @@ public class WeightController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //transform komponent || x y z 
         gameObject.transform.localScale = new Vector3(currentWeight, currentWeight, 1);
 
         if(currentWeight > minWeight)
@@ -47,8 +48,6 @@ public class WeightController : MonoBehaviour
                 gameObject.GetComponent<AudioSource>().clip = ewSound;
                 gameObject.GetComponent<AudioSource>().Play();
             }
-
         }
     }
-
 }
