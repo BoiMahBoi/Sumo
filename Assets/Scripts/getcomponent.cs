@@ -28,6 +28,13 @@ public class getcomponent : MonoBehaviour
 
     }
 
+    public IEnumerator myCoroutine() 
+    {
+        yield return new WaitForSeconds(4);
+
+
+    }
+
 }
 
 
