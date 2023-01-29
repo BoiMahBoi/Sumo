@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class secondspilprog : MonoBehaviour
 {
-    // Awake is called when the object is enabled
+    // Awake is called when script is being loaded
     private void Awake()
     {
-        Debug.Log("Start");
+        Debug.Log("Awake");
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Awake");
+        Debug.Log("Start");
     }
 
 
-    // Fixed update is called before update, at the same rate based on Delta Time 
+    // Fixed update is called every fixed frame-rate frame. 
+    // ex: runs a specific number of frames in second, which is set in editor -
+    // no matter of your computer editor.
     // physics 
     private void FixedUpdate()
     {
@@ -25,6 +27,7 @@ public class secondspilprog : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Ex: fps on pc 30, 30 fps in second in the game. 
     // game logic 
     void Update()
     {
