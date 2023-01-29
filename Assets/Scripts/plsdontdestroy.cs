@@ -5,6 +5,7 @@ using UnityEngine;
 public class plsdontdestroy : MonoBehaviour
 {
     // We have a class that we only want one of. This is the variable that we want. it will start by being null
+    // Static so it only belongs to the class and so no more of this type can be made 
     public static plsdontdestroy instance = null;
 
     private void Awake()
